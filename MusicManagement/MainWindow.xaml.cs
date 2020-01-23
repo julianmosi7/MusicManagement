@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ViewModelLib;
 
 namespace MusicManagement
 {
@@ -23,6 +25,33 @@ namespace MusicManagement
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            ConnectionString();
+            var db = new MusicContext("OrderContext");
+            var viewModel = new ViewModel(db);
+            DataContext = viewModel;
+            AccessDatabase(db);
+        }
+
+        private void ConnectionString()
+        {
+            
+        }
+
+        private void AccessDatabase(MusicContext db)
+        {
+            try
+            {
+                int nr = db.Artists.Count();
+                Console.WriteLine($"Nr Employees = {nr}");
+                Title = $"Nr Employees = {nr}";
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

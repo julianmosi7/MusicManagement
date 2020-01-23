@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MVVM.Tools</id>
+    <version>1.1.0</version>
+    <title>MVVM.Tools</title>
+    <authors>Robert Grueneis</authors>
+    <owners>Robert Grueneis</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Classes required for MVVM (ObservableObject,RelayCommand,AsObservableObject)</description>
+    <releaseNotes>First version</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>MVVM Grueneis ObservableObject RelayCommand</tags>
+  </metadata>
+</package>
