@@ -1,0 +1,12 @@
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\bin\Debug\DBLibrary.dll.config
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\bin\Debug\DBLibrary.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\bin\Debug\DBLibrary.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\bin\Debug\EntityFramework.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\bin\Debug\EntityFramework.xml
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\obj\Debug\DBLib.csprojAssemblyReference.cache
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\obj\Debug\DBLib.csproj.CoreCompileInputs.cache
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\obj\Debug\DBLib.csproj.CopyComplete
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\obj\Debug\DBLibrary.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\obj\Debug\DBLibrary.pdb

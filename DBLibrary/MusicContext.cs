@@ -15,6 +15,6 @@ namespace DBLib
         public DbSet<Song> Songs { get; set; }
 
         public MusicContext() { }
-        public MusicContext(string NameOrConnectionString) : base("MusicContext") { }
+        public MusicContext(string NameOrConnectionString) : base("MusicContext") { }   
     }
 }

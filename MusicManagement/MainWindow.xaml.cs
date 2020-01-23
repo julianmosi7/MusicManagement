@@ -1,4 +1,5 @@
 ﻿using DBLib;
+using DBLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace MusicManagement
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             ConnectionString();
-            var db = new MusicContext("OrderContext");
+            var db = new MusicContext("OrderContext").SeedIfEmpty();
             var viewModel = new ViewModel(db);
             DataContext = viewModel;
             AccessDatabase(db);
@@ -38,7 +39,9 @@ namespace MusicManagement
 
         private void ConnectionString()
         {
-            
+            string path = AppDomain.CurrentDomain.BaseDirectory;
+            Console.WriteLine($"path    ={path}");
+            AppDomain.CurrentDomain.SetData("DataDirectory", path);
         }
 
         private void AccessDatabase(MusicContext db)

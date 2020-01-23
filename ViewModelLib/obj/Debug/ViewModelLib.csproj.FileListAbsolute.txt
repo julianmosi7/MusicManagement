@@ -1,0 +1,15 @@
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\ViewModelLib.dll.config
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\ViewModelLib.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\ViewModelLib.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\DBLibrary.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\EntityFramework.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\EntityFramework.SqlServer.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\DBLibrary.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\DBLibrary.dll.config
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\EntityFramework.xml
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\EntityFramework.SqlServer.xml
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.csprojAssemblyReference.cache
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.csproj.CoreCompileInputs.cache
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.csproj.CopyComplete
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.pdb
