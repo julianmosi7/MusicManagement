@@ -13,3 +13,17 @@ D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\obj\Debug\ViewMode
 D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.csproj.CopyComplete
 D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.dll
 D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.pdb
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\ViewModelLib.dll.config
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\ViewModelLib.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\ViewModelLib.pdb
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\DBLibrary.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\EntityFramework.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\DBLibrary.pdb
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\DBLibrary.dll.config
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\EntityFramework.xml
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.csprojAssemblyReference.cache
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.csproj.CopyComplete
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.pdb

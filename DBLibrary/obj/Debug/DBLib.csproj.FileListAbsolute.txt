@@ -10,3 +10,14 @@ D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\obj\Debug\DBLib.cspro
 D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\obj\Debug\DBLib.csproj.CopyComplete
 D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\obj\Debug\DBLibrary.dll
 D:\Schule\4.Klasse\POS\Project17\MusicManagement\DBLibrary\obj\Debug\DBLibrary.pdb
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\bin\Debug\DBLibrary.dll.config
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\bin\Debug\DBLibrary.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\bin\Debug\DBLibrary.pdb
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\bin\Debug\EntityFramework.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\bin\Debug\EntityFramework.xml
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\obj\Debug\DBLib.csprojAssemblyReference.cache
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\obj\Debug\DBLib.csproj.CopyComplete
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\obj\Debug\DBLibrary.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\DBLibrary\obj\Debug\DBLibrary.pdb
