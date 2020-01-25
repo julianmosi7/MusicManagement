@@ -54,6 +54,7 @@
     <Compile Include="Artist.cs" />
     <Compile Include="DbSeeder.cs" />
     <Compile Include="MusicContext.cs" />
+    <Compile Include="Partials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Record.cs" />
     <Compile Include="RecordType.cs" />

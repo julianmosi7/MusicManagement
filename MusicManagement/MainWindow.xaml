@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MusicManagement"
+        xmlns:viewmodellib="clr-namespace:ViewModelLib;assembly=ViewModelLib"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <viewmodellib:ViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -37,7 +41,7 @@
             </Grid.RowDefinitions>
 
             <DataGrid Grid.Row="0"></DataGrid>
-            <ListBox Grid.Row="1"></ListBox>            
+            <ListBox Grid.Row="1" ItemsSource="{Binding Artists}"></ListBox>            
         </Grid>        
         <DataGrid Grid.Column="1" Grid.Row="1"></DataGrid>
         <TreeView Grid.Column="2" Grid.Row="1"></TreeView>        

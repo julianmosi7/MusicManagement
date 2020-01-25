@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DBLib
 {
-    public class Artist
+    public partial class Artist
     {
         public int Id { get; set; }
         public string ArtistName { get; set; }
