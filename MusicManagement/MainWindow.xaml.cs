@@ -54,6 +54,16 @@ namespace MusicManagement
             {
                 MessageBox.Show(ex.ToString());
             }
+        }       
+
+        //drag&drop
+
+        private void ListBoxItem_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var listBoxItem = sender as ListBoxItem;
+            var artist = listBoxItem.Content as Artist;
+            if (artist == null) return;
+            DragDrop.DoDragDrop(listBoxItem, artist, DragDropEffects.All);
         }
     }
 }

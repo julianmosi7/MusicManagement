@@ -16,3 +16,16 @@ C:\_PR\CSharp\Shared\MVVM.Tools\MVVM.Tools\obj\Debug\MVVM.Tools.csprojAssemblyRe
 C:\_PR\CSharp\Shared\MVVM.Tools\MVVM.Tools\obj\Debug\MVVM.Tools.csproj.CopyComplete
 C:\_PR\CSharp\Shared\MVVM.Tools\MVVM.Tools\obj\Debug\MVVM.Tools.dll
 C:\_PR\CSharp\Shared\MVVM.Tools\MVVM.Tools\obj\Debug\MVVM.Tools.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\bin\Debug\MVVM.Tools.dll.config
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\bin\Debug\MVVM.Tools.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\bin\Debug\MVVM.Tools.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\bin\Debug\EntityFramework.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\bin\Debug\EntityFramework.SqlServer.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\bin\Debug\EntityFramework.xml
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\bin\Debug\EntityFramework.SqlServer.xml
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\obj\Debug\MVVM.Tools.csproj.CoreCompileInputs.cache
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\obj\Debug\MVVM.Tools.csproj.CopyComplete
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\obj\Debug\MVVM.Tools.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\obj\Debug\MVVM.Tools.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MVVM.Tools\obj\Debug\MVVM.Tools.csprojAssemblyReference.cache

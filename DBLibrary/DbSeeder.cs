@@ -10,8 +10,8 @@ namespace DBLib
     {
         public static MusicContext SeedIfEmpty(this MusicContext db)
         {
-            AssertDatabase(db);
-            //GenerateCompletelyNew(db);
+            AssertDatabase(db);   
+            Delete(db);
             //if (db.Artists.Any()) return db;
             //Console.WriteLine("Db is not Empty");
             Seed(db);
@@ -20,33 +20,51 @@ namespace DBLib
         }
 
         public static void Seed(MusicContext db)
-        {
-            List<RecordType> recordTypesList = new List<RecordType>();
-            List<Artist> artistsList = new List<Artist>();
-            List<Record> recordsList = new List<Record>();
-            List<Song> songsList = new List<Song>();
+        {           
             string[] csv_file = GetFile();
             for (int i = 1; i < csv_file.Length; i++)
             {
                 string line = csv_file[i];
                 string[] parts = line.Split(';');
+                string recordType = parts[2];
+                string artistName = parts[0];
+                string recordTitle = parts[1];
+                string year = parts[3];
+                string songTitle = parts[4];
 
-                var recordTypeA = new RecordType { Descr = parts[2] };
-                var artistA = new Artist { ArtistName = parts[0] };
-                var recordA = new Record { RecordTitle = parts[1], Year = parts[3], Artist = artistA, RecordType = recordTypeA };
-                var songA = new Song { SongTitle = parts[4], Record = recordA };
+                var recordTypeA = db.RecordTypes.Where(x => x.Descr.Equals(recordType)).FirstOrDefault();
+                if (recordTypeA == null)
+                {
+                    recordTypeA = new RecordType { Descr = recordType };
+                    db.RecordTypes.Add(recordTypeA);
+                    db.SaveChanges();
+                }
 
-                recordTypesList.Add(recordTypeA);
-                artistsList.Add(artistA);
-                recordsList.Add(recordA);
-                songsList.Add(songA);
-            }
-            recordTypesList.GroupBy(x => x.Descr).Select(x => x.First()).ToList().ForEach(x => db.RecordTypes.Add(x));
-            //recordTypesList.GroupBy(x => x.Descr).Select(x => x.First()).ToList().ForEach(x => Console.WriteLine(x.Descr.ToString()));          
+                var artistA = db.Artists.Where(x => x.ArtistName.Equals(artistName)).FirstOrDefault();
+                if(artistA == null)
+                {
+                    artistA = new Artist { ArtistName = artistName };
+                    db.Artists.Add(artistA);
+                    db.SaveChanges();
+                }
 
-            artistsList.GroupBy(x => x.ArtistName).Select(x => x.First()).ToList().ForEach(x => db.Artists.Add(x));
-            recordsList.GroupBy(x => x.RecordTitle).Select(x => x.First()).ToList().ForEach(x => db.Records.Add(x));
-            songsList.GroupBy(x => x.SongTitle).Select(x => x.First()).ToList().ForEach(x => db.Songs.Add(x));
+
+                var recordA = db.Records.Where(x => x.RecordTitle.Equals(recordTitle)).FirstOrDefault();
+                if(recordA == null)
+                {
+                    recordA = new Record { RecordTitle = recordTitle, Year = year, Artist = artistA, RecordType = recordTypeA };
+                    db.Records.Add(recordA);
+                    db.SaveChanges();
+                }
+                    
+                var songA = db.Songs.Where(x => x.SongTitle.Equals(songTitle)).FirstOrDefault();
+                if(songA == null)
+                {
+                    songA = new Song { SongTitle = songTitle, Record = recordA };
+                    db.Songs.Add(songA);
+                    db.SaveChanges();
+                }             
+            }            
         }
 
         public static string[] GetFile()
@@ -57,36 +75,20 @@ namespace DBLib
         }
 
         private static void AssertDatabase(MusicContext db)
-        {
-            /*
-            Console.WriteLine("----------AssertDatabase----------");
-            bool dbExists = db.Database.Exists();
-            if (dbExists)
-            {
-                Console.WriteLine($"Database exists: {db.Database.Connection.ConnectionString}");
-                bool dbStructureOk = db.Database.CompatibleWithModel(true);
-                Console.WriteLine($"Structure still the same? {dbStructureOk}");
-                if (dbStructureOk) return;
-
-                Console.WriteLine("Delete the database");
-                db.Database.Delete();
-            }
-            Console.WriteLine("Create the database with actual configuration");
-            db.Database.Create();
-            */
-
+        {           
             if (db.Database.Exists())
             {
                 if (db.Database.CompatibleWithModel(true)) return;
                 db.Database.Delete();
             }
             db.Database.Create();
-        }
-
-        private static void GenerateCompletelyNew(MusicContext db)
+        }    
+        
+        private static void Delete(MusicContext db)
         {
             db.Database.Delete();
             db.Database.Create();
         }
     }
 }
+

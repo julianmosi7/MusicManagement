@@ -110,6 +110,10 @@
       <Project>{83E6D34A-1279-4108-B9C9-7D29B187EEFE}</Project>
       <Name>DBLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MVVM.Tools\MVVM.Tools.csproj">
+      <Project>{98d33b68-ead1-4280-99d7-b9bc03dad05e}</Project>
+      <Name>MVVM.Tools</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ViewModelLib\ViewModelLib.csproj">
       <Project>{E7373CCF-773D-49FD-B25F-AEB4591925D5}</Project>
       <Name>ViewModelLib</Name>

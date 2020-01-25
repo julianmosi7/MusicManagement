@@ -49,3 +49,7 @@ C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\MusicMana
 C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\MusicManagement\obj\Debug\MusicManagement.csproj.CopyComplete
 C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\MusicManagement\obj\Debug\MusicManagement.exe
 C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\MusicManagement\obj\Debug\MusicManagement.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MusicManagement\bin\Debug\MVVM.Tools.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MusicManagement\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MusicManagement\bin\Debug\MVVM.Tools.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\MusicManagement\bin\Debug\MVVM.Tools.dll.config

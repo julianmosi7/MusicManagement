@@ -27,3 +27,7 @@ C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModel
 C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.csproj.CopyComplete
 C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.dll
 C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project18\MusicManagement\ViewModelLib\obj\Debug\ViewModelLib.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\MVVM.Tools.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\MVVM.Tools.pdb
+D:\Schule\4.Klasse\POS\Project17\MusicManagement\ViewModelLib\bin\Debug\MVVM.Tools.dll.config
