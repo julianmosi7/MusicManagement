@@ -53,7 +53,7 @@
             <DataGrid Name="dataGrid" Grid.Row="0" AutoGenerateColumns="False"
                       ItemsSource="{Binding Records}"
                       IsSynchronizedWithCurrentItem="True"
-                      SelectedItem="{Binding SelectedRecord, Mode=TwoWay}">
+                      SelectedItem="{Binding SelectedRecord, Mode=TwoWay}" DragOver="DataGrip_DragOver" Drop="DataGrip_Drop">
 
                 <DataGrid.Columns>
                     <DataGridTextColumn Width="*" Header="Year" Binding="{Binding Path=Year}"></DataGridTextColumn>

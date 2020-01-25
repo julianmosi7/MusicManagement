@@ -27,13 +27,18 @@ namespace MusicManagement
             InitializeComponent();
         }
 
+        private ViewModel viewModel;
+        private MusicContext db;
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             ConnectionString();
-            var db = new MusicContext("OrderContext").SeedIfEmpty();
-            var viewModel = new ViewModel(db);
+            db = new MusicContext("OrderContext").SeedIfEmpty();
+            viewModel = new ViewModel(db);
+            
             DataContext = viewModel;
             AccessDatabase(db);
+            InitDragDrop(viewModel);
         }
 
         private void ConnectionString()
@@ -58,12 +63,37 @@ namespace MusicManagement
 
         //drag&drop
 
+        private void InitDragDrop(ViewModel viewModel)
+        {
+            dataGrid.AllowDrop = true;
+            dataGrid.DragOver += DataGrip_DragOver;
+            dataGrid.Drop += DataGrip_Drop;
+            dataGrid.DragEnter += (s, e) => dataGrid.Background = Brushes.SkyBlue;
+            dataGrid.DragLeave += (s, e) => dataGrid.Background = Brushes.White;
+        }
+
         private void ListBoxItem_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             var listBoxItem = sender as ListBoxItem;
             var artist = listBoxItem.Content as Artist;
             if (artist == null) return;
             DragDrop.DoDragDrop(listBoxItem, artist, DragDropEffects.All);
+        }
+
+        private void DataGrip_DragOver(object sender, DragEventArgs e)
+        {
+            bool isStringData = e.Data.GetDataPresent(typeof(Artist));
+            e.Effects = isStringData
+                ? DragDropEffects.Copy
+                : DragDropEffects.None;
+            e.Handled = true;
+        }
+
+        private void DataGrip_Drop(object sender, DragEventArgs e)
+        {
+            Artist artist = e.Data.GetData(typeof(Artist)) as Artist;
+            viewModel.SelectedArtist = artist;
+            dataGrid.Background = Brushes.White;
         }
     }
 }

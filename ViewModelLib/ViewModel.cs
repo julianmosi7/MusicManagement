@@ -82,7 +82,7 @@ namespace ViewModelLib
             set
             {
                 selectedRecord = value;
-                Songs = db.Songs.Where(x => x.Record.RecordTitle == selectedRecord.RecordTitle).ToList();                
+                Songs = db.Songs.Where(x => x.Record.RecordTitle == selectedRecord.RecordTitle).ToList();
                 RaisePropertyChangedEvent(nameof(SelectedRecord));
             }
         }
