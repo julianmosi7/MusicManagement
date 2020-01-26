@@ -2,6 +2,7 @@
 using MVVM.Tools;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,7 +43,7 @@ namespace ViewModelLib
             {
                 selectedArtist = value;
                 Artists = db.Artists.Where(x => x.ArtistName == selectedArtist.ArtistName).ToList();
-                Records = db.Records.Where(x => x.Artist.ArtistName == selectedArtist.ArtistName).ToList();
+                Records = db.Records.Where(x => x.Artist.ArtistName == selectedArtist.ArtistName).AsObservableCollection();
                 
                 RaisePropertyChangedEvent(nameof(SelectedArtist));
             }
@@ -62,9 +63,9 @@ namespace ViewModelLib
             }
         }
 
-        private List<Record> records;
+        private ObservableCollection<Record> records;
 
-        public List<Record> Records
+        public ObservableCollection<Record> Records
         {
             get { return records; }
             set
@@ -82,14 +83,14 @@ namespace ViewModelLib
             set
             {
                 selectedRecord = value;
-                Songs = db.Songs.Where(x => x.Record.RecordTitle == selectedRecord.RecordTitle).ToList();                
+                Songs = db.Songs.Where(x => x.Record.RecordTitle == selectedRecord.RecordTitle).AsObservableCollection();
                 RaisePropertyChangedEvent(nameof(SelectedRecord));
             }
         }
 
-        private List<Song> songs;
+        private ObservableCollection<Song> songs;
 
-        public List<Song> Songs
+        public ObservableCollection<Song> Songs
         {
             get { return songs; }
             set

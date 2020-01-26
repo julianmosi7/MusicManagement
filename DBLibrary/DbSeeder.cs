@@ -10,7 +10,7 @@ namespace DBLib
     {
         public static MusicContext SeedIfEmpty(this MusicContext db)
         {
-            AssertDatabase(db);   
+            //AssertDatabase(db);   
             Delete(db);
             //if (db.Artists.Any()) return db;
             //Console.WriteLine("Db is not Empty");

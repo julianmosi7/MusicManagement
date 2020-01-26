@@ -50,10 +50,10 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <DataGrid Name="dataGrid" Grid.Row="0" AutoGenerateColumns="False"
+            <DataGrid Name="dataGridRecords" Grid.Row="0" AutoGenerateColumns="False"
                       ItemsSource="{Binding Records}"
                       IsSynchronizedWithCurrentItem="True"
-                      SelectedItem="{Binding SelectedRecord, Mode=TwoWay}">
+                      SelectedItem="{Binding SelectedRecord, Mode=TwoWay}" DragOver="DataGrip_DragOver" Drop="DataGrip_Drop">
 
                 <DataGrid.Columns>
                     <DataGridTextColumn Width="*" Header="Year" Binding="{Binding Path=Year}"></DataGridTextColumn>
@@ -79,6 +79,6 @@
             </DataGrid.Columns>            
         </DataGrid>
         
-        <TreeView Grid.Column="2" Grid.Row="1"></TreeView>        
+        <TreeView Name="treeView" Grid.Column="2" Grid.Row="1" MouseDoubleClick="TreeView_MouseDoubleClick" PreviewMouseLeftButtonDown="TreeView_MouseDown"></TreeView>        
     </Grid>
 </Window>
